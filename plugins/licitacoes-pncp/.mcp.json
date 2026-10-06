@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "licitacoes-pncp": {
+      "command": "uv",
+      "args": ["run", "--script", "${CLAUDE_PLUGIN_ROOT}/server/pncp_server.py"],
+      "env": {
+        "LICITACOES_DIR": "${LICITACOES_DIR:-~/Licitacoes}"
+      }
+    }
+  }
+}

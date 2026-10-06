@@ -1,0 +1,16 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: Testes
+        run: uv run --with "mcp>=1.2,<2" --with httpx --with pypdf --with reportlab --with pytest pytest -q
+      - name: Empacotar .plugin
+        run: cd plugins/licitacoes-pncp && zip -r ../../licitacoes-pncp.plugin . -x "*.DS_Store"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: licitacoes-pncp.plugin
+          path: licitacoes-pncp.plugin

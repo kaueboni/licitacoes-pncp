@@ -1,0 +1,15 @@
+{
+  "name": "licitacoes-pncp",
+  "description": "Plugins para licitações públicas brasileiras (PNCP).",
+  "owner": {
+    "name": "Kaue Bonilha"
+  },
+  "plugins": [
+    {
+      "name": "licitacoes-pncp",
+      "source": "./plugins/licitacoes-pncp",
+      "description": "Busca licitações no PNCP por palavra-chave, baixa editais e analisa os documentos no Claude.",
+      "version": "0.1.0"
+    }
+  ]
+}

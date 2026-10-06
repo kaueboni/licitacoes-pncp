@@ -1,0 +1,7 @@
+{
+  "name": "licitacoes-pncp",
+  "version": "0.1.0",
+  "description": "Busca licitações no PNCP por palavra-chave, baixa editais e anexos e analisa os documentos no Claude (habilitação, prazos, riscos, go/no-go).",
+  "author": { "name": "Kaue Bonilha" },
+  "keywords": ["licitacao", "pncp", "edital", "pregao", "compras-publicas"]
+}
